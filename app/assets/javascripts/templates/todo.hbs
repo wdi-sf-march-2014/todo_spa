@@ -1,0 +1,5 @@
+    <div class="todo done-{{completed}}" data-id="{{id}}" data-foobar="hello world">
+        {{ title }}  
+        <input type="checkbox" {{#if completed}} checked {{/if}} name="completed">
+        <button id="removeTodo">Delete</button>
+    </div>
