@@ -59,14 +59,8 @@ $(function(){
     };
 
     App.saveModel = function(model, callback){
-        // DO SOME STUFF HERE
-        //callback(model);
-        var data = { todo : model };
-        $.ajax({
-            url : this.urls.create.path,
-            type : this.urls.create.method,
-            data : data
-        }).done(callback);
+        // DO SOME STUFF HERE TO PERSIST DATA
+        callback(model);
     };
 
     App.updateItem = function(model, callback){
